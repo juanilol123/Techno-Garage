@@ -4,3 +4,5 @@ En este podemos encontrar:
 -Todas las librerias necesarias para poder llevarlo a cabo
 -Las conexiones necesarias para vincularlo a nuestra pagina y setearle una IP estática
 -Nuestro código para la placa de arduino junto al HTML y CSS de nuestra página
+-Codigo HTML de la pagina con los estilos
+-Dos posibles conexiones, una en una red wifi cualquiera y otra con su Default Gateway. máscara de red y DNS configurado (Se usó para una exposición)
