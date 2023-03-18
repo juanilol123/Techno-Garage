@@ -5,32 +5,32 @@
 
 
  
-//// Replace with your network credentials
-//const char* ssid = "Esp82";
-//const char* password = "mtph6483";
-//
-////// Set web server port number to 80
-//WiFiServer server(80);
-
-
-
-
 // Replace with your network credentials
-const char* ssid = "LABO";
-const char* password = "";
+const char* ssid = "Esp82";
+const char* password = "mtph8634";
+
+//// Set web server port number to 80
+WiFiServer server(80);
 
 
-// Set web server port number 
-WiFiServer server(8096);
+
+
+//// Replace with your network credentials
+//const char* ssid = "LABO";
+//const char* password = "";
+//
+//
+//// Set web server port number 
+//WiFiServer server(8096);
 
 //// Set your Static IP address
-IPAddress local_IP(192, 168, 100, 206);
-
-// Set your Gateway IP address
-IPAddress gateway(192, 168, 100, 254);
-IPAddress subnet(255, 255, 255, 0);
-IPAddress primaryDNS(8, 8, 8, 8); //optional
-IPAddress secondaryDNS(8, 8, 4, 4); //optional
+//IPAddress local_IP(192, 168, 100, 206);
+//
+//// Set your Gateway IP address
+//IPAddress gateway(192, 168, 100, 254);
+//IPAddress subnet(255, 255, 255, 0);
+//IPAddress primaryDNS(8, 8, 8, 8); //optional
+//IPAddress secondaryDNS(8, 8, 4, 4); //optional
 
 
 
@@ -64,9 +64,9 @@ void setup() {
 
 
    //Configures static IP address
-if (!WiFi.config(local_IP, gateway, subnet, primaryDNS, secondaryDNS)) {
-Serial.println("STA Failed to configure");
-}
+//if (!WiFi.config(local_IP, gateway, subnet, primaryDNS, secondaryDNS)) {
+//Serial.println("STA Failed to configure");
+//}
 
  // Configuración del beep
   EasyBuzzer.setPin(D7);
@@ -173,7 +173,10 @@ client.println("<style>");
          client.println("text-align: center;}");
     
       client.println("body{");
-        client.println("background: linear-gradient(to bottom, #000000, #19043d);}");
+        client.println("background: linear-gradient(to bottom, #000000, #19043d);");
+        client.println("display: flex;");
+        client.println("flex-direction: column;");
+        client.println("min-height: 100vh;}");
     
     client.println("#main-container{");
           client.println("padding-top: 50px;");
@@ -224,6 +227,7 @@ client.println("<style>");
             client.println("padding: 1px;");
             client.println("text-align: center;");
             client.println("color: white; }");
+            client.println("margin-top: auto;");
 
 client.println("</style>");
 client.println("</head>");
@@ -245,7 +249,7 @@ client.println("</head>");
 
         client.println("<footer>");
 
-            client.println("<span class='material-symbols-outlined'>account_circle </span>   @juan_pisanii @eve.rosass @saasha.ml @fetu_krumm");  
+            client.println("<span class='material-symbols-outlined'>account_circle </span>   @juan_pisanii 1163219257");  
 
         client.println("</footer>");
     client.println("</body>");
