@@ -1,5 +1,5 @@
 # Techno-Garage
-Este proyecto se enfoco en realizar algo relacionado a la domótica en un arduino ESP8266 donde debemos de crear una pagina web que pueda interactuar con nuestro proyecto físico.
+Este proyecto se enfocó en realizar algo relacionado a la domótica en un arduino ESP8266 donde debemos de crear una pagina web que pueda interactuar con nuestro proyecto físico.
 En este podemos encontrar:
 -Todas las librerias necesarias para poder llevarlo a cabo
 -Las conexiones necesarias para vincularlo a nuestra pagina y setearle una IP estática
